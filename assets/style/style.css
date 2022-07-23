@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: cursive;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  padding: 0 12%;
+}
+
+header {
+  width: 100vw;
+  height: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header #title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header .top-nav {
+  width: 50%;
+}
+
+header .top-nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+header .top-nav ul .top-nav__item {
+  color: #555555;
+}
+
+header .sign-in a {
+  color: #555555;
+}
+
+header .sign-in a:hover {
+  color: #d54513;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+header .top-estimates button {
+  color: #ffffff;
+  padding: 10px 22px;
+  background: linear-gradient(177deg, #fa6832 0%, #d54513 100%);
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+.hovered {
+  position: relative;
+  overflow: hidden;
+}
+
+.hovered::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #32323250;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: hover .4s 1;
+          animation: hover .4s 1;
+}
+
+.left {
+  position: relative;
+  overflow: hidden;
+}
+
+.left::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: #32323250;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: leave .4s 1;
+          animation: leave .4s 1;
+}
+
+@-webkit-keyframes hover {
+  0% {
+    width: 2px;
+    height: 2px;
+    visibility: hidden;
+    border-radius: 50%;
+    top: var(--top);
+    left: var(--left);
+  }
+  10% {
+    visibility: visible;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+}
+
+@keyframes hover {
+  0% {
+    width: 2px;
+    height: 2px;
+    visibility: hidden;
+    border-radius: 50%;
+    top: var(--top);
+    left: var(--left);
+  }
+  10% {
+    visibility: visible;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+}
+
+@-webkit-keyframes leave {
+  0% {
+    width: 200px;
+    height: 200px;
+    border-radius: inherit;
+  }
+  90% {
+    visibility: visible;
+    border-radius: 50%;
+  }
+  100% {
+    width: 2px;
+    height: 2px;
+    visibility: hidden;
+    border-radius: 50%;
+    top: var(--top);
+    left: var(--left);
+  }
+}
+
+@keyframes leave {
+  0% {
+    width: 200px;
+    height: 200px;
+    border-radius: inherit;
+  }
+  90% {
+    visibility: visible;
+    border-radius: 50%;
+  }
+  100% {
+    width: 2px;
+    height: 2px;
+    visibility: hidden;
+    border-radius: 50%;
+    top: var(--top);
+    left: var(--left);
+  }
+}
+/*# sourceMappingURL=style.css.map */

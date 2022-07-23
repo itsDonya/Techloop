@@ -1,0 +1,133 @@
+@import "./mixins";
+@import "./variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    padding: 0 12%;
+}
+
+header {
+    @include size(100vw, 14vh);
+    @include flex(row, space-between, center);
+
+    #title {
+        user-select: none;
+    }
+
+    .top-nav {
+        width: 50%;
+
+        ul {
+            width: 100%;
+            @include flex(row, space-between, center);
+            list-style: none;
+
+            .top-nav__item {
+                color: #555555;
+            }
+        }
+    }
+
+    .sign-in {
+        a {
+            color: #555555;
+
+            &:hover {
+                color: $main;
+                transition: all .2s ease-in-out;
+            }
+        }
+    }
+
+    .top-estimates button {
+        color: #ffffff;
+        padding: 10px 22px;
+        background: $orange-gradient;
+        border: none;
+        border-radius: 25px;
+        font-weight: bold;
+        position: relative;
+    }
+}
+
+.hovered {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $hover-bg;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: hover .4s 1;
+    }
+}
+
+.left {
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        background-color: $hover-bg;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: leave .4s 1;
+    }
+}
+
+@keyframes hover {
+    0% {
+        width: 2px;
+        height: 2px;
+        visibility: hidden;
+        border-radius: 50%;
+        top: var(--top);
+        left: var(--left);
+    }
+    10% {
+        visibility: visible;
+        border-radius: 50%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+}
+@keyframes leave {
+    0% {
+        width: 200px;
+        height: 200px;
+        border-radius: inherit;
+    }
+    90% {
+        visibility: visible;
+        border-radius: 50%;
+    }
+    100% {
+        width: 2px;
+        height: 2px;
+        visibility: hidden;
+        border-radius: 50%;
+        top: var(--top);
+        left: var(--left);
+    }
+}
