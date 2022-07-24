@@ -6,6 +6,10 @@
   font-family: cursive;
 }
 
+body {
+  overflow: hidden;
+}
+
 a {
   display: inline-block;
   color: inherit;
@@ -18,7 +22,7 @@ header, .top-banner {
 
 header {
   width: 100vw;
-  height: 14vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +43,7 @@ header #title {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  text-transform: uppercase;
 }
 
 header .top-nav {
@@ -155,6 +160,8 @@ header .top-estimates button {
   color: #ffffff;
   padding: 10px 22px;
   background: linear-gradient(177deg, #fa6832 0%, #d54513 100%);
+  -webkit-box-shadow: 0 2px 15px #7b68ee26;
+          box-shadow: 0 2px 15px #7b68ee26;
   border: none;
   border-radius: 25px;
   font-weight: bold;
@@ -291,6 +298,35 @@ header .top-estimates button {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 58vh;
+  position: relative;
+}
+
+.top-banner::before {
+  content: "";
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  background-color: #c1c1c12b;
+  bottom: -240px;
+  left: -140px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-58deg);
+          transform: rotate(-58deg);
+  z-index: -10;
+}
+
+.top-banner::after {
+  content: "";
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  background-color: #c1c1c12b;
+  top: -290px;
+  right: -360px;
+  border-radius: 30px;
+  -webkit-transform: rotate(-58deg);
+          transform: rotate(-58deg);
+  z-index: -10;
 }
 
 .top-banner .banner-details {
@@ -321,6 +357,10 @@ header .top-estimates button {
   color: #d54513;
   font-size: 42px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top-banner .banner-details p:nth-child(4) {
+  font-weight: bold;
 }
 
 .top-banner .banner-details .banner-downloadlinks img {

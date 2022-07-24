@@ -8,6 +8,10 @@
     font-family: cursive;
 }
 
+body {
+    overflow: hidden;
+}
+
 a {
     display: inline-block;
     color: inherit;
@@ -21,11 +25,12 @@ header, .top-banner {
 // -----------------------Header-----------------------
 
 header {
-    @include size(100vw, 14vh);
+    @include size(100vw, 10vh);
     @include flex(row, space-between, center);
 
     #title {
         user-select: none;
+        text-transform: uppercase;
     }
 
     .top-nav {
@@ -114,6 +119,7 @@ header {
         color: #ffffff;
         padding: 10px 22px;
         background: $orange-gradient;
+        box-shadow: 0 2px 15px #7b68ee26;
         border: none;
         border-radius: 25px;
         font-weight: bold;
@@ -198,6 +204,30 @@ header {
 .top-banner {
     @include flex(row, space-between, center);
     height: 58vh;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        @include size(40vw, 40vw);
+        background-color: #c1c1c12b;
+        bottom: -240px;
+        left: -140px;
+        border-radius: 50%;
+        transform: rotate(-58deg);
+        z-index: -10;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        @include size(60vw, 60vw);
+        background-color: #c1c1c12b;
+        top: -290px;
+        right: -360px;
+        border-radius: 30px;
+        transform: rotate(-58deg);
+        z-index: -10;
+    }
     
     .banner-details {
         height: 100%;
@@ -214,6 +244,10 @@ header {
             color: $main;
             font-size: 42px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p:nth-child(4) {
+            font-weight: bold;
         }
 
         .banner-downloadlinks {
