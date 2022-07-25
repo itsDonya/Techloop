@@ -1,59 +1,60 @@
 import React from "react";
 import "../Styles/Header.scss";
-import Button from "./Button";
+import Button from "../Utilities/Button.js";
 import Logo from "../Img/main-logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return(
         <>
             <header>
-                <a href="./">
+                <Link to="/home">
                     <img src={Logo} alt="Techloop Logo"/>
-                </a>
+                </Link>
                 <nav class="top-nav">
                     <ul>
-                        <li class="top-nav__item"><a href="./">Home</a></li>
-                        <li class="top-nav__item"><a href="./">About Us</a></li>
+                        <li class="top-nav__item"><Link to="/home">Home</Link></li>
+                        <li class="top-nav__item"><Link to="/about-us">About Us</Link></li>
                         <li class="top-nav__item has-dropdown">
-                            <a href="./">Services +</a>
+                            <Link to="/">Services +</Link>
                             <ul class="dropdown">
-                                <li class="dropdown__item"><a href="./">Services</a></li>
+                                <li class="dropdown__item"><Link to="/services">Services</Link></li>
                                 <hr/>
-                                <li class="dropdown__item"><a href="./">Services Details</a></li>
+                                <li class="dropdown__item"><Link to="/services-details">Services Details</Link></li>
                             </ul>
                         </li>
-                        <li class="top-nav__item"><a href="./">Pricing</a></li>
+                        <li class="top-nav__item"><Link to="/pricing">Pricing</Link></li>
                         <li class="top-nav__item has-dropdown">
-                            <a href="./">Pages +</a>
+                            <Link to="/">Pages +</Link>
                             <ul class="dropdown">
-                                <li class="dropdown__item"><a href="./">Projects</a></li>
+                                <li class="dropdown__item"><Link to="/projects">Projects</Link></li>
                                 <hr/>
-                                <li class="dropdown__item"><a href="./">Projects Details</a></li>
+                                <li class="dropdown__item"><Link to="/projects-details">Projects Details</Link></li>
                                 <hr/>
-                                <li class="dropdown__item"><a href="./">Pricing</a></li>
+                                <li class="dropdown__item"><Link to="/pricing">Pricing</Link></li>
                                 <hr/>
-                                <li class="dropdown__item"><a href="./">FaQ</a></li>
+                                <li class="dropdown__item"><Link to="/faq">FaQ</Link></li>
                                 <hr/>
-                                <li class="dropdown__item"><a href="./">Coming Soon</a></li>
+                                <li class="dropdown__item"><Link to="/coming-soon">Coming Soon</Link></li>
                                 <hr/>
-                                <li class="dropdown__item"><a href="./">Terms & Conditions</a></li>
+                                <li class="dropdown__item"><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
                                 <hr/>
-                                <li class="dropdown__item"><a href="./">Privacy Policy</a></li>
+                                <li class="dropdown__item"><Link to="/privacy-policy">Privacy Policy</Link></li>
                             </ul>
                         </li>
                         <li class="top-nav__item has-dropdown">
-                            <a href="./">Blog +</a>
+                            <Link to="/">Blog +</Link>
                             <ul class="dropdown">
-                                <a class="dropdown__item" href="./">Blog Grid</a>
+                                <Link class="dropdown__item" to="/blog-grid">Blog Grid</Link>
                                 <hr/>
-                                <a class="dropdown__item" href="./">Blog Details</a>
+                                <Link class="dropdown__item" to="/blog-details">Blog Details</Link>
                             </ul>
                         </li>
-                        <li class="top-nav__item"><a href="./">Contact</a></li>
+                        <li class="top-nav__item"><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
                 <div class="sign-in">
-                    <a href="./" class="sign-in__btn">Log In / Signup</a>
+                    <Link to="/" class="sign-in__btn">Log In / Signup</Link>
                 </div>
                 <div class="top-estimates">
                     <Button text="get estimates" />

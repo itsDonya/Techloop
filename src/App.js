@@ -1,11 +1,19 @@
 import React, { Component } from "react";
-import Header from "./Components/Header";
+import { Route, Switch } from "react-router-dom";
+
+// Pages
+import Home from "./Pages/Home";
 
 class App extends Component {
   render() {
     return(
       <>
-        <Header />
+        <div>
+          <Switch>
+            <Route path="/home" component={Home} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </div>
       </>
     )
   }
