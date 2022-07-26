@@ -2,10 +2,6 @@ import React, {Component} from "react";
 import "../Styles/Button.scss";
 
 class Button extends Component {
-    constructor(props) {
-        super(props);
-        this.btn = React.createRef();
-    }
 
     buttonHover = (e) => {
         e.currentTarget.classList.remove("left");
@@ -24,7 +20,7 @@ class Button extends Component {
     render() {
         const { text } = this.props;
         return(
-            <button ref={this.btn} onMouseEnter={this.buttonHover} onMouseLeave={this.buttonUnHover}>{text}</button>
+            <button className="animated-button" onMouseEnter={this.buttonHover} onMouseLeave={this.buttonUnHover}>{text}</button>
         )
     }
 }
