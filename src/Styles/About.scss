@@ -1,0 +1,93 @@
+@import "./variables";
+@import "./mixins";
+
+.about {
+    height: 80vh;
+    background-color: #d7d7d72b;
+    @include flex(row, space-between, center);
+    gap: 3rem;
+}
+
+.technology-title {
+    position: relative;
+}
+
+.about-img-container {
+    @include size(50vw, 64%);
+    .about-img {
+        height: 100%;
+    }
+}
+
+.about-details {
+    @include size(100%, 64%);
+    @include flex(column, space-between, start);
+}
+
+.about-title {
+    font-size: 28px;
+    span {
+        font-size: 52px;
+        color: $main;
+    }
+}
+
+.about-description {
+    color: #7e7e7e;
+    font-size: 15px;
+}
+
+.technologies {
+    width: 100%;
+}
+
+.technology {
+    @include flex(column, space-between, center);
+    gap: .8rem;
+    margin: 2rem 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.technology-header {
+    width: 100%;
+    color: $main;
+    @include flex(row, space-between, center);
+}
+
+.technology-title, .technology-percent {
+    font-size: 14px;
+}
+
+.technology-progress-bar {
+    display: block;
+    @include size(100%, 4px);
+    background-color: #c3c3c355;
+    position: relative;
+}
+
+#eighty::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: $main;
+}
+
+#seventy-five::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    background-color: $main;
+}
+
+#seventy::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: $main;
+}

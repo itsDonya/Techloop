@@ -18,6 +18,6 @@ a {
   text-decoration: none;
 }
 
-header, .top-banner, .services {
+header, .top-banner, .services, .about {
   padding: 0 12%;
 }
