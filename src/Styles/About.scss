@@ -21,7 +21,7 @@
 
 .about-details {
     @include size(100%, 64%);
-    @include flex(column, space-between, start);
+    @include flex(column, space-between, flex-start);
 }
 
 .about-title {
@@ -43,7 +43,7 @@
 
 .technology {
     @include flex(column, space-between, center);
-    gap: .8rem;
+    gap: .7rem;
     margin: 2rem 0;
 
     &:last-child {
@@ -63,7 +63,7 @@
 
 .technology-progress-bar {
     display: block;
-    @include size(100%, 4px);
+    @include size(100%, 5px);
     background-color: #c3c3c355;
     position: relative;
 }

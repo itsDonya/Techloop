@@ -1,0 +1,57 @@
+@import "./variables";
+@import "./mixins";
+
+.plan {
+    @include size(25vw, 72vh);
+    @include flex(column, space-around, center);
+    box-shadow: 0px 0px 12px 2px #aaaaaa41;
+    border-radius: 6px;
+    transition: box-shadow .3s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 12px 2px $plan-hover;
+    }
+}
+
+.plan-type {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.plan-price {
+    span {
+        color: $main;
+        font-size: 46px;
+    }
+}
+
+.plan-properties {
+    height: 50%;
+    @include flex(column, space-between, flex-start);
+    list-style: none;
+}
+
+.plan-property{
+    position: relative;
+
+    &::before {
+        content: url("../Svg/CheckMark.svg");
+        @include size(14px, 14px);
+        position: absolute;
+        left: -20px;
+    }
+}
+
+.plan-button {
+    color: #ffffff;
+    @include size(72%, 38px);
+    border: none;
+    border-radius: 26px;
+    background: $orange-gradient;
+    transition: filter .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(86%);
+    }
+}
