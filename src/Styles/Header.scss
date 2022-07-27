@@ -47,6 +47,8 @@ header {
                     
                     transition: all .4s ease-out;
 
+                    z-index: 20;
+
                     .dropdown__item {
                         @include size(100%, 46px);
                         color: #ffffff;
