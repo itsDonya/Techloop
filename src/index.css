@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
-header, .top-banner, .services, .about, .pricing {
+header,
+.top-banner,
+.services,
+.about,
+.pricing,
+.counter {
   padding: 0 12%;
 }

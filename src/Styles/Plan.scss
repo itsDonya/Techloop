@@ -33,6 +33,7 @@
 
 .plan-property{
     position: relative;
+    text-transform: capitalize;
 
     &::before {
         content: url("../Svg/CheckMark.svg");

@@ -1,0 +1,31 @@
+@import "./variables";
+@import "./mixins";
+
+.counter {
+    height: 36vh;
+    background: url("../Img/mobile-banner-bg.jpg");
+    @include flex(column, center, center);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.counters {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: 100px;
+    justify-content: space-between;
+}
+
+.counter-box{
+    text-align: center;
+}
+
+.counter-number,
+.counter-title {
+    color: #ffffff;
+}
+
+.counter-number {
+    font-size: 42px;
+}
