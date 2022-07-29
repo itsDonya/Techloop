@@ -36,42 +36,11 @@ class Services extends Component {
     render() {
         const { icons, titles, descriptions } = this.state;
         return(
-            <>
-                <ServicesContainer className="services">
-
-                    <Service ServiceBg={{backgroundColor: "#ffffff"}}
-                        Title={titles[0]}
-                        Description={descriptions[0]}
-                        IconSvg={icons[0]}
-                        IconFill={{fill: "#d54513"}}
-                        TitleColor={{color: "#000000"}}
-                        DescriptionColor={{color: "gray"}}
-                        ButtonColor={{color: "#ffffff"}}
-                        ButtonBg={{backgroundColor: "#d54513"}} /> 
-
-                    <Service ServiceBg={{backgroundColor: "#d54513"}}
-                        Title={titles[1]}
-                        Description={descriptions[1]}
-                        IconSvg={icons[1]}
-                        IconFill={{fill: "#ffffff"}}
-                        TitleColor={{color: "#ffffff"}}
-                        DescriptionColor={{color: "#ffffff"}}
-                        ButtonColor={{color: "#d54513"}}
-                        ButtonBg={{backgroundColor: "#ffffff"}} /> 
-
-
-                    <Service ServiceBg={{backgroundColor: "#ffffff"}}
-                        Title={titles[2]}
-                        Description={descriptions[2]}
-                        IconSvg={icons[2]}
-                        IconFill={{fill: "#d54513"}}
-                        TitleColor={{color: "#000000"}}
-                        DescriptionColor={{color: "gray"}}
-                        ButtonColor={{color: "#ffffff"}}
-                        ButtonBg={{backgroundColor: "#d54513"}} /> 
-
-                </ServicesContainer>
-            </>
+            <ServicesContainer className="services">
+                <Service Title={titles[0]} Description={descriptions[0]} IconSvg={icons[0]} />
+                <Service Title={titles[1]} Description={descriptions[1]} IconSvg={icons[1]} />
+                <Service Title={titles[2]} Description={descriptions[2]} IconSvg={icons[2]} />
+            </ServicesContainer>
         )
     }
 }

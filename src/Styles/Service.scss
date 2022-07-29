@@ -15,6 +15,60 @@
     }
 }
 
+// Each service properties
+.service {
+    &:first-child, &:last-child {
+        background-color: #ffffff;
+        .service-title {
+            color: #000000;
+        }
+        .service-description {
+            color: gray;
+        }
+        .service-button {
+            color: #ffffff;
+            background-color: #d54513;
+        }
+    }
+    
+    &:nth-child(2) {
+        background-color: #d54513;
+        .service-title {
+            color: #ffffff;
+        }
+        .service-description {
+            color: #ffffff;
+        }
+        .service-button {
+            color: #d54513;
+            background-color: #ffffff;
+        }
+        svg {
+            fill: #ffffff;
+        }
+    }
+}
+
+// Each service HOVER properties
+.service {
+    &:first-child:hover , &:last-child:hover {
+        background-color: #d54513;
+        .service-title {
+            color: #ffffff;
+        }
+        .service-description {
+            color: #ffffff;
+        }
+        .service-button {
+            color: #d54513;
+            background-color: #ffffff;
+        }
+        svg {
+            fill: #ffffff;
+        }
+    }
+}
+
 .service-icon {
     width: 40px;
 }

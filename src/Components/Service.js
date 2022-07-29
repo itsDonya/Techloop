@@ -3,14 +3,13 @@ import React from "react";
 // Style
 import "../Styles/Service.scss";
 
-const Service = ({Title, Description, ServiceBg, IconSvg, TitleColor, DescriptionColor, ButtonColor, ButtonBg}) => {
-    const ButtonStyle = {...ButtonColor, ...ButtonBg};
+const Service = ({Title, Description, IconSvg}) => {
     return(
-        <div className="service" style={ServiceBg}>
+        <div className="service">
             <IconSvg />
-            <h4 className="service-title" style={TitleColor}>{Title}</h4>
-            <p className="service-description" style={DescriptionColor}>{Description}</p>
-            <button className="service-button" style={ButtonStyle}>read more</button>
+            <h4 className="service-title">{Title}</h4>
+            <p className="service-description">{Description}</p>
+            <button className="service-button">read more</button>
         </div>
     )
 }
