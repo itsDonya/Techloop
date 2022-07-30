@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./mixins";
+
+.solution {
+    color: $main;
+    @include size(100%, 3rem);
+    @include flex(row, flex-start, center);
+    font-size: 14px;
+    position: relative;
+    transition: all .3s ease-out;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include size(0, 100%);
+        background: $orange-gradient;
+        transition: all .3s ease-out;
+        z-index: -1;
+    }
+}
+
+.solution:hover {
+    color: #ffffff;
+    padding-left: 2rem;
+    z-index: 10;
+
+    &::before {
+        width: 100%;
+    }
+}

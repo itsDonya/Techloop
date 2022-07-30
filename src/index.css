@@ -23,6 +23,7 @@ header,
 .services,
 .about,
 .pricing,
-.counter {
+.counter,
+.solutions {
   padding: 0 12%;
 }

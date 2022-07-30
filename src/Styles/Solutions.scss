@@ -1,0 +1,33 @@
+@import "./variables";
+@import "./mixins";
+
+.solutions {
+    height: 90vh;
+    @include flex(row, space-between, center);
+    .solutions-img-container,
+    .solutions-details {
+        height: 70%;
+        @include flex(column, space-between, center);
+    }
+}
+
+.solutions-details {
+    align-items: flex-start !important;
+}
+
+.solutions-title {
+    color: #505060;
+    font-size: 30px;
+}
+
+.solutions-description {
+    color: gray;
+    font-size: 13px;
+    line-height: 1.6rem;
+}
+
+.solutions-container {
+    width: 100%;
+    @include flex(column, space-between, center);
+    gap: 2px;
+}
