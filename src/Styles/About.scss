@@ -3,7 +3,7 @@
 
 .about {
     height: 80vh;
-    background-color: #d7d7d72b;
+    background-color: $gray-bg;
     @include flex(row, space-between, center);
     gap: 3rem;
 }

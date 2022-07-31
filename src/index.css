@@ -24,6 +24,8 @@ header,
 .about,
 .pricing,
 .counter,
-.solutions {
-  padding: 0 12%;
+.solutions,
+.team {
+  padding-left: 12% !important;
+  padding-right: 12% !important;
 }
