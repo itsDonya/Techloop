@@ -1,0 +1,35 @@
+@import "./variables";
+@import "./mixins";
+
+.start {
+    height: 38vh;
+    padding: 3rem 0;
+    @include flex(column, space-evenly, center);
+    background: url("../Img/start-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.start-title {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.start-description {
+    color: #ffffff;
+}
+
+.start-button {
+    @include size(164px, 46px);
+    @include flex(row, center, center);
+    border-radius: 22px;
+    color: $main;
+    background-color: #ffffff;
+    box-shadow: 0 0px 25px #7b68ee40;
+    transition: background .3s ease-in-out;
+    &:hover {
+        color: #ffffff;
+        background-color: $main;
+        box-shadow: 0 0 20px #7c68ee62;
+    }
+}

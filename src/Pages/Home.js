@@ -10,6 +10,7 @@ import Counter from "../Components/Counter";
 import Solutions from "../Components/Solutions";
 import Team from "../Components/Team";
 import Reviews from "../Components/Reviews";
+import Start from "../Components/Start";
 
 const Home = () => {
     return(
@@ -23,6 +24,7 @@ const Home = () => {
             <Solutions />
             <Team />
             <Reviews />
+            <Start />
         </>
     )
 }
