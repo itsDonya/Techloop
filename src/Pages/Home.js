@@ -9,6 +9,7 @@ import Pricing from "../Components/Pricing";
 import Counter from "../Components/Counter";
 import Solutions from "../Components/Solutions";
 import Team from "../Components/Team";
+import Reviews from "../Components/Reviews";
 
 const Home = () => {
     return(
@@ -21,6 +22,7 @@ const Home = () => {
             <Counter experience="17+" rates="170" tea="900+" projects="500+" />
             <Solutions />
             <Team />
+            <Reviews />
         </>
     )
 }

@@ -25,7 +25,8 @@ header,
 .pricing,
 .counter,
 .solutions,
-.team {
+.team,
+.reviews {
   padding-left: 12% !important;
   padding-right: 12% !important;
 }
