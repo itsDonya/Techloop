@@ -26,7 +26,8 @@ header,
 .counter,
 .solutions,
 .team,
-.reviews {
+.reviews,
+.blogs {
   padding-left: 12% !important;
   padding-right: 12% !important;
 }

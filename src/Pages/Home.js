@@ -11,6 +11,7 @@ import Solutions from "../Components/Solutions";
 import Team from "../Components/Team";
 import Reviews from "../Components/Reviews";
 import Start from "../Components/Start";
+import Blogs from "../Components/Blogs";
 
 const Home = () => {
     return(
@@ -25,6 +26,7 @@ const Home = () => {
             <Team />
             <Reviews />
             <Start />
+            <Blogs />
         </>
     )
 }

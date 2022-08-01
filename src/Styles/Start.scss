@@ -25,6 +25,7 @@
     border-radius: 22px;
     color: $main;
     background-color: #ffffff;
+    text-transform: capitalize;
     box-shadow: 0 0px 25px #7b68ee40;
     transition: background .3s ease-in-out;
     &:hover {
