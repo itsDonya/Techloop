@@ -9,3 +9,20 @@
     justify-content: $justify;
     flex-direction: $direction;
 }
+
+@mixin footerTextSizeSetting {
+    font-size: 15px;
+    margin-bottom: .4rem;
+    line-height: 1.6;
+}
+
+@mixin footerLinkSizeSetting {
+    font-size: 15px;
+    margin-bottom: .4rem;
+    line-height: 1.6;
+    display: block;
+    transition: all .2s ease-in-out;
+    &:hover {
+        filter: brightness(200%);
+    }
+}

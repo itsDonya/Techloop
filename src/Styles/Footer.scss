@@ -1,0 +1,98 @@
+@import "./variables";
+@import "./mixins";
+
+footer {
+    color: #d1d1d1;
+    min-height: 60vh;
+    padding: 4rem 0;
+    background: url("../Img/mobile-banner-bg.jpg");
+    background-position: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-gap: 1.6rem;
+    .footer-column {
+        display: grid;
+        grid-template-rows: 1fr 6fr;
+    }
+}
+
+.footer-title {
+    color: $main;
+    text-transform: capitalize;
+}
+
+.footer-about {
+    .footer-about-details {
+        p {
+            @include footerTextSizeSetting;
+        }
+        .orange {
+            color: $main;
+        }
+        .footer-email-input-container {
+            @include size(100%, 46px);
+            margin-top: .8rem;
+            border-radius: 4px;
+            overflow: hidden;
+            input, button {
+                height: 100%;
+                display: inline-block;
+                border-radius: none;
+                border: none;
+                outline: none;
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+            input {
+                width: 60%;
+                padding-left: 1rem;
+            }
+            button {
+                width: 40%;
+                color: #ffffff;
+                background: $orange-gradient;
+                transition: filter .2s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    filter: brightness(80%);
+
+                }
+            }
+        }
+    }
+}
+
+.footer-services-details a,
+.footer-links-details a {
+    @include footerLinkSizeSetting;
+}
+
+.footer-posts {
+    .footer-post {
+        @include flex(row, space-between, center);
+        cursor: pointer;
+        margin-bottom: .8rem;
+        gap: .6rem;
+        &:hover {
+            filter: brightness(110%);
+        }
+        .footer-post-img {
+            width: 60px;
+            border-radius: 2px;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                filter: brightness(80%);
+            }
+        }
+        .footer-post-title {
+            font-size: 15px;
+        }
+        .footer-post-date {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}

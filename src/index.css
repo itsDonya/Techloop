@@ -28,7 +28,8 @@ header,
 .team,
 .reviews,
 .blogs,
-.partners {
+.partners,
+footer {
   padding-left: 12% !important;
   padding-right: 12% !important;
 }

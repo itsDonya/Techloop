@@ -13,6 +13,7 @@ import Reviews from "../Components/Reviews";
 import Start from "../Components/Start";
 import Blogs from "../Components/Blogs";
 import Partners from "../Components/Partners";
+import Footer from "../Components/Footer";
 
 const Home = () => {
     return(
@@ -29,6 +30,7 @@ const Home = () => {
             <Start />
             <Blogs />
             <Partners />
+            <Footer />
         </>
     )
 }
