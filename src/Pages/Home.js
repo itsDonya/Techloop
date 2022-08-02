@@ -14,6 +14,7 @@ import Start from "../Components/Start";
 import Blogs from "../Components/Blogs";
 import Partners from "../Components/Partners";
 import Footer from "../Components/Footer";
+import CopyRight from "../Components/CopyRight";
 
 const Home = () => {
     return(
@@ -31,6 +32,7 @@ const Home = () => {
             <Blogs />
             <Partners />
             <Footer />
+            <CopyRight />
         </>
     )
 }
