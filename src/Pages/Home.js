@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components
-import Header from "../Components/Header";
+// import Header from "../Components/Header";
 import Banner from "../Components/Banner";
 import Services from "../Components/Services";
 import About from "../Components/About";
@@ -13,13 +13,10 @@ import Reviews from "../Components/Reviews";
 import Start from "../Components/Start";
 import Blogs from "../Components/Blogs";
 import Partners from "../Components/Partners";
-import Footer from "../Components/Footer";
-import CopyRight from "../Components/CopyRight";
 
 const Home = () => {
     return(
         <>
-            <Header />
             <Banner />
             <Services />
             <About />
@@ -31,8 +28,6 @@ const Home = () => {
             <Start />
             <Blogs />
             <Partners />
-            <Footer />
-            <CopyRight />
         </>
     )
 }
