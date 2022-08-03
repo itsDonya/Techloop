@@ -11,9 +11,28 @@ import { GlobeSolid, DisplaySolid ,BoltSolid } from "../Svg/ServicesIcons";
 
 // Styled Div
 const ServicesContainer = Styled.div`
-    margin: 10rem auto;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
+    .service {
+        &:nth-child(2) {
+            background-color: #d54513;
+            .service-title {
+                color: #ffffff;
+            }
+            .service-description {
+                color: #ffffff;
+            }
+            .service-button {
+                color: #d54513;
+                background-color: #ffffff;
+            }
+            svg {
+                fill: #ffffff;
+            }
+        }
+    }
 `
 
 class Services extends Component {

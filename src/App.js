@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
-// Pages
-import Home from "./Pages/Home";
-import AboutUs from "./Pages/AboutUs";
+// Components
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import CopyRight from "./Components/CopyRight";
+
+// Pages
+import Home from "./Pages/Home";
+import AboutUsPage from "./Pages/AboutUsPage";
+import ServicesPage from "./Pages/ServicesPage";
 
 class App extends Component {
   render() {
@@ -15,7 +18,8 @@ class App extends Component {
         <Header />
 
           <Switch>
-            <Route path="/about-us" component={AboutUs} />
+            <Route path="/services" component={ServicesPage} />
+            <Route path="/about-us" component={AboutUsPage} />
             <Route path="/home" component={Home} />
             <Route path="/" component={Home} />
           </Switch>

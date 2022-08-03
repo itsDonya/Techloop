@@ -7,7 +7,7 @@ import Team from "../Components/Team";
 import Reviews from "../Components/Reviews";
 import Partners from "../Components/Partners";
 
-const AboutUs = () => {
+const AboutUsPage = () => {
     return(
         <>
             <About />
@@ -19,4 +19,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs;
+export default AboutUsPage;
