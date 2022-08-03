@@ -30,7 +30,8 @@ header,
 .blogs,
 .partners,
 footer,
-.copyright {
+.copyright,
+.services-details {
   padding-left: 12% !important;
   padding-right: 12% !important;
 }
