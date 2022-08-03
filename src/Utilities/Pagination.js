@@ -15,7 +15,7 @@ const PaginationContainer = Styled.div`
         border: none;
         border-radius: 4px;
         background-color: #ffffff;
-        box-shadow: 0px 0px 14px 1px #cccccc90;
+        box-shadow: 0px 0px 14px 1px #cccccc;
         transition: all .3s ease-in-out;
         cursor: pointer;
         &:hover, &:nth-child(3) {

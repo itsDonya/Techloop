@@ -32,7 +32,8 @@ header,
 footer,
 .copyright,
 .services-details,
-.pagination {
+.pagination,
+.projects {
   padding-left: 12% !important;
   padding-right: 12% !important;
 }
