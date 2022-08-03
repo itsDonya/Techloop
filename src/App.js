@@ -10,6 +10,7 @@ import CopyRight from "./Components/CopyRight";
 import Home from "./Pages/Home";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ServicesPage from "./Pages/ServicesPage";
+import PricingPage from "./Pages/PricingPage";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Header />
 
           <Switch>
+            <Route path="/pricing" component={PricingPage} />
             <Route path="/services" component={ServicesPage} />
             <Route path="/about-us" component={AboutUsPage} />
             <Route path="/home" component={Home} />
