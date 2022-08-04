@@ -34,7 +34,8 @@ footer,
 .services-details,
 .pagination,
 .projects,
-.projects-details {
+.projects-details,
+.FAQ {
   padding-left: 12% !important;
   padding-right: 12% !important;
 }
