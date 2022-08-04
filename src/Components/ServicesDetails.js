@@ -17,7 +17,7 @@ const ServicesDetails = () => {
         <ServicesDetailsContainer className="services-details">
 
             <img src={ServicePic} alt="Our Services" />
-            <WebDevelopment />
+            <WebDevelopment title="web development services" />
             
         </ServicesDetailsContainer>
     )

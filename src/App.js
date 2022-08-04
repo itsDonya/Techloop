@@ -13,6 +13,7 @@ import ServicesPage from "./Pages/ServicesPage";
 import PricingPage from "./Pages/PricingPage";
 import ServicesDetailsPage from "./Pages/ServicesDetailsPage";
 import ProjectsPage from "./Pages/ProjectsPage";
+import ProjectsDetailsPage from "./Pages/ProjectsDetailsPage";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <Header />
 
           <Switch>
+            <Route path="/projects-details" component={ProjectsDetailsPage} />
             <Route path="/projects" component={ProjectsPage} />
             <Route path="/services-details" component={ServicesDetailsPage} />
             <Route path="/pricing" component={PricingPage} />
