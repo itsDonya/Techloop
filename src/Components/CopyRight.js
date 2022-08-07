@@ -36,6 +36,12 @@ const CopyrightSection = Styled.div`
         display: inline-block;
         background-color: #000000;
     }
+    // Mobile Size
+    @media (max-width: 768px) {
+        .copyright-text {
+            font-size: 10px;
+        }
+    }
 `
 
 const CopyRight = () => {

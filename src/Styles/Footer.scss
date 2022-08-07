@@ -96,3 +96,20 @@ footer {
         }
     }
 }
+
+// -------- Mobile Size --------
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+// -------- Tablet Size --------
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        grid-template-columns: repeat(2, 50%);
+        gap: 4rem;
+    }
+}
