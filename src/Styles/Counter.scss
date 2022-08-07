@@ -29,3 +29,20 @@
 .counter-number {
     font-size: 42px;
 }
+
+// ----------- Mobile & Tablet size -----------
+@media (max-width: 1024px) {
+    .counter {
+        @include size(100vw, 26vh);
+    }
+    .counters {
+        grid-template-columns: repeat(2, 40vw);
+        padding: 2rem 0;
+    }
+    .counter-number {
+        font-size: 22px;
+    }
+    .counter-title {
+        font-size: 12px;
+    }
+}
