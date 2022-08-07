@@ -51,6 +51,25 @@ const ProjectsDetailsContainer = Styled.div`
             }
         }
     }
+    // Mobile & Tablet Size
+    @media (max-width: 1024px) {
+        #projects-details {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        button {
+            padding: 10px 40px;
+            font-size: 10px;
+        }
+        .projects-details-column {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            &:nth-child(5) {
+                display: none;
+            }
+        }
+    }
 `
 
 const ProjectsDetails = () => {
