@@ -30,7 +30,7 @@
     }
     
     .banner-details {
-        height: 100%;
+        height: auto;
         @include flex(column, space-between, flexStart);
         padding: 6rem 0px;
         padding-right: 6rem;
@@ -79,5 +79,45 @@
 @keyframes imageMovement {
     50% {
         transform: translateY(20px);
+    }
+}
+
+// ------------ Mobile & Tablet Size ------------
+@media (max-width: 1000px) {
+    .top-banner {
+        &::before {
+            @include size(400px, 400px);
+            bottom: -140px;
+            left: -120px;
+        }
+    }
+
+    &::after {
+        @include size(400px, 400px);
+        background-color: #c1c1c12b;
+        top: -260px !important;
+        right: -80px !important;
+    }
+
+    .banner-details {
+        width: 100vw;
+        padding: 0 !important;
+        align-items: center;
+        gap: 1.2rem;
+
+        p {
+            text-align: center;
+        }
+
+        .banner-downloadlinks img {
+                width: 100%;
+                display: block;
+        }
+        
+    }
+
+    .banner-img-container {
+        position: absolute;
+        left: -999em;
     }
 }
