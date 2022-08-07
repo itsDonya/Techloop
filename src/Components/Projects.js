@@ -21,6 +21,12 @@ const ProjectsContainer = Styled.div`
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
     }
+    // Mobile & Tablet Size
+    @media (max-width: 1024px) {
+        .projects-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 `
 
 class Projects extends Component {
