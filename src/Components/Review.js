@@ -38,6 +38,12 @@ const ReviewContainer = Styled.div`
         height: 20px;
         fill: #f0ce26;
     }
+    // Tablet size
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 60%;
+        box-shadow: 0px 0px 24px #d0d0d0;
+        border-radius: 8px;
+    }
 `
 
 const Review = ( {Picture, Name, Job, Explanation} ) => {

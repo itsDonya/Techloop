@@ -26,6 +26,18 @@ const ReviewsContainer = Styled.div`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    // Mobile & Tablet size
+    @media (max-width: 1024px) {
+        height: auto;
+        padding: 2rem 0;
+        .clients {
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
 `
 
 class Reviews extends Component {
