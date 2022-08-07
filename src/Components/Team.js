@@ -30,6 +30,32 @@ const TeamContainer = Styled.div`
         align-items: center;
         gap: 1.4rem;
     }
+    // Mobile size
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 2rem 0;
+        gap: 1rem;
+        .members {
+            flex-direction: column;
+        }
+        .team-title {
+            font-size: 24px;
+        }
+    }
+    
+    // Tablet size
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: auto;
+        padding: 2rem 0;
+        gap: 2rem;
+        .members {
+            display: grid;
+            grid-template-columns: repeat(2, 40vw);
+        }
+        .team-title {
+            font-size: 24px;
+        }
+    }
 `
 
 class Team extends Component {
