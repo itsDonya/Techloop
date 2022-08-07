@@ -10,72 +10,8 @@ header {
         text-transform: uppercase;
     }
 
-    .top-nav {
-        width: 50%;
-
-        ul {
-            width: 100%;
-            @include flex(row, space-between, center);
-            list-style: none;
-
-            .top-nav__item {
-                color: #555555;
-                padding: 1rem 0;
-            }
-            
-            .has-dropdown:hover ul {
-                opacity: 1;
-                transition: all .4s ease-out;
-                top: 50px;
-                visibility: visible;
-            }
-
-            .has-dropdown {
-                position: relative;
-                
-                .dropdown {
-                    @include size(250px, auto);
-                    @include flex(column, space-between, center);
-                    background: $orange-gradient;
-                    
-                    position: absolute;
-                    left: 0;
-                    top: 74px;
-
-                    opacity: 0;
-                    visibility: hidden;
-                    
-                    transition: all .4s ease-out;
-
-                    z-index: 20;
-
-                    .dropdown__item {
-                        @include size(100%, 46px);
-                        color: #ffffff;
-                        text-align: start;
-                        padding: 12px;
-                        transition: all .2s ease-out;
-                        font-size: 14px;
-                        z-index: 10;
-                        cursor: pointer;
-                        
-                        &:hover {
-                            color: #000000;
-                            background-color: #f7f5f5;
-                            padding-top: 14px;
-                            padding-left: 14px;
-                            box-shadow: 0px 0px 6px #cccccc;
-                        }
-                    }
-
-                    hr {
-                        @include size(100%, 1px);
-                        background-color: #ffffff;
-                        border: none;
-                    }
-                }
-            }
-        }
+    .hamburger-menu {
+        display: none;
     }
 
     .sign-in {
@@ -88,5 +24,20 @@ header {
             }
         }
     }
+}
 
+// ----------------- Mobile Size -----------------
+
+@media (max-width: 768px) {
+    header {
+        position: relative;
+
+        .hamburger-menu {
+            display: flex;
+        }
+
+        button, .sign-in {
+            display: none;
+        }
+    }
 }
