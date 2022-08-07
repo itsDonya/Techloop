@@ -85,6 +85,7 @@
 // ------------ Mobile & Tablet Size ------------
 @media (max-width: 1000px) {
     .top-banner {
+        margin: 4rem 0;
         &::before {
             @include size(400px, 400px);
             bottom: -140px;
@@ -104,6 +105,14 @@
         padding: 0 !important;
         align-items: center;
         gap: 1.2rem;
+
+        .banner-heading {
+            font-size: 24px !important;
+        }
+
+        .banner-title {
+            font-size: 42px !important;
+        }
 
         p {
             text-align: center;

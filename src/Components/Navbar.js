@@ -77,7 +77,7 @@ const TopNav = Styled.nav`
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
         width: 100vw;
         height: 100vh;
         position: absolute;
