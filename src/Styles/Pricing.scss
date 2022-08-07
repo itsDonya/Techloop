@@ -45,3 +45,15 @@
         }
     }
 }
+
+// ----------- Mobile & Tablet size -----------
+@media (max-width: 1024px) {
+    .pricing {
+        height: auto;
+        padding: 3rem 0;
+    }
+    .pricing-plans {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

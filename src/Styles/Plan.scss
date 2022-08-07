@@ -56,3 +56,26 @@
         filter: brightness(86%);
     }
 }
+
+// ----------- Mobile size -----------
+@media (max-width: 768px) {
+    .plan {
+        @include size(72vw, 70vh);
+    }
+    .plan-property {
+        font-size: 14px;
+    }
+    .plan-button {
+        @include size(56%, 36px);
+    }
+}
+
+// ----------- Tablet size -----------
+@media (min-width: 768px) and (max-width: 1024px) {
+    .plan {
+        @include size(46vw, 62vh);
+    }
+    .plan-button {
+        @include size(46%, 40px);
+    }
+}
