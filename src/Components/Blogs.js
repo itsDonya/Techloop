@@ -26,6 +26,19 @@ const StyledBlogs = Styled.div`
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
     }
+    // Mobile size
+    @media (max-width: 1024px) {
+        height: auto;
+        padding: 2rem 0;
+        gap: 2rem;
+        .blogs-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
 `
 
 class Blogs extends Component {

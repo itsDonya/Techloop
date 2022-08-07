@@ -17,6 +17,13 @@ const PartnersContainer = Sytled.div`
     padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    // Mobile & Tablet size
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            width: 120px;
+        }
+    }
 `
 
 const Partners = () => {

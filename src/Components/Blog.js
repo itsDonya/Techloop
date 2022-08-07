@@ -9,7 +9,8 @@ const StyledBlog = Styled.div`
     align-items: center;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0px 0px 12px 3px #cccccc96;
+    // box-shadow: 0px 0px 12px 3px #cccccc96;
+    box-shadow: 0px 0px 24px #b1b1b192;
     .blog-img-container {
         .blog-img {
             width: 100%;
@@ -26,6 +27,10 @@ const StyledBlog = Styled.div`
             font-size: 14px;
             margin: 1rem 0;
         }
+    }
+    // Mobile size
+    @media (max-width: 1024px) {
+        width: 80%;
     }
 `
 
