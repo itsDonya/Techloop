@@ -14,6 +14,12 @@ const ServicesContainer = Styled.div`
     margin-bottom: 10rem;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 `
 
 class Services extends Component {
