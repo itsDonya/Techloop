@@ -46,8 +46,8 @@
         svg {
             fill: #ffffff;
         }
-}
-
+    }
+    
 .service-icon {
     width: 40px;
 }
@@ -72,5 +72,49 @@
     
     &:hover {
         box-shadow: 0px 0px 6px #5d5b5b;
+    }
+}
+
+// -------------- Mobile Size --------------
+
+@media (max-width: 768px) {
+    .service {
+        @include size(62vw, 62vw);
+
+        svg {
+            width: 30px;
+        }
+        .service-title {
+            font-size: 18px;
+        }
+        .service-description {
+            font-size: 12px;
+        }
+        .service-button {
+            padding: 0.4rem 1.2rem;
+            font-size: 12px;
+        }
+    }
+}
+
+// -------------- Tablet Size --------------
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .service {
+        @include size(52vw, 42vw);
+
+        svg {
+            width: 50px;
+        }
+        .service-title {
+            font-size: 24px;
+        }
+        .service-description {
+            font-size: 16px;
+        }
+        .service-button {
+            padding: 0.7rem 1.6rem;
+            font-size: 14px;
+        }
     }
 }

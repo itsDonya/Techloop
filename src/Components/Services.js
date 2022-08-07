@@ -33,6 +33,13 @@ const ServicesContainer = Styled.div`
             }
         }
     }
+
+    @media (max-width: 1024px) {
+        margin-top: 6rem !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 `
 
 class Services extends Component {
